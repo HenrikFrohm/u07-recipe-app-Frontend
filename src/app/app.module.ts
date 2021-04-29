@@ -1,18 +1,41 @@
+//rooten av hela app-mappen.
+
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserModule, Title } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 
+import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { NavComponent } from './nav/nav.component';
+import { CategoriesComponent } from './categories/categories.component';
+import { CategoryListingComponent } from './category-listing/category-listing.component';
+import { RecipeComponent } from './category-listing/recipe/recipe.component';
+import { FeaturedComponent } from './featured/featured.component';
+import { SavedComponent } from './saved/saved.component';
+import { RecipesService } from './recipes.service';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    FeaturedComponent,
+    NavComponent,
+    SavedComponent,
+    CategoriesComponent,
+    CategoryListingComponent,
+    RecipeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    RecipesService,
+    Title
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,18 @@
+<div class="container" *ngIf="categoryNames !== null && categoryNames !== undefined">
+  <section *ngIf="featured !== null && featured !== undefined && featured !== []">
+    <div class="featured">
+      <h2>Featured {{featured.strCategory}} Recipes</h2>
+      <p class="desc">Check out the most popular and best
+        rated <strong>{{featured.strCategory.toLowerCase()}}
+          recipes: </strong></p>
+    </div>
+  </section>
+  <span>
+    <div class="box" *ngFor="let dish of dishes">
+      <img class="img" src="{{dish.strMealThumb}}">
+      <h3
+        routerLink="/category/{{featured.strCategory}}/{{(dish.strMeal).toLowerCase()}}/{{dish.idMeal}}">
+        {{dish.strMeal}}</h3>
+    </div>
+  </span>
+</div>

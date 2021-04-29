@@ -1,1 +1,195 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,500');
+@import url('https://fonts.googleapis.com/css?family=Grand+Hotel');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+
+* {
+  font-family: 'Montserrat Alternates', sans-serif;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.details-box {
+  background-color: white;
+  box-sizing: border-box;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: -50px;
+  height: 70px;
+  width: 90%;
+  cursor: pointer;
+}
+
+.details-box:focus {
+  outline: none;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgba(116, 117, 207, 0.801);
+  font-weight: 600;
+}
+
+h2:hover,
+h2:focus,
+h2:active {
+  outline: none;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(63, 63, 63);
+  font-weight: 400;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+p,
+li {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 16px;
+  color: rgb(95, 93, 90);
+  line-height: 26px;
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+.dish-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 340px;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 20px;
+}
+
+.all-dishes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dish {
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: .1s ease-in-out;
+}
+
+.dish:hover {
+  color: rgba(82, 84, 204, 0.801)
+}
+
+.dish:active {
+  color: rgba(63, 66, 207, 0.801);
+}
+
+.saves-button {
+  width: 60px;
+  padding: 5px;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+}
+
+.button {
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  background: #fafafa;
+  color: #7a7a7a;
+  position: relative;
+  left: 94px;
+  top: 30px;
+  opacity: .8;
+  cursor: pointer;
+}
+
+.saves-button:hover {
+  background: #ffffff;
+  opacity: .93;
+}
+
+.saves-button:active {
+  background: #faf4eb;
+}
+
+.add {
+  margin-left: 20px;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  background: rgba(68, 71, 201, 0.801);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding-left: 0;
+  transition: .2s ease-in-out;
+}
+
+.add:hover {
+  background: rgba(60, 62, 201, 0.801);
+}
+
+.add:active,
+.add:focus {
+  background: rgba(85, 87, 196, 0.801);
+}
+
+iframe {
+  margin-top: 36px;
+  margin-bottom: 50px;
+}
+
+.thumb {
+  width: 98%;
+  border-radius: 5px;
+}
+
+.recipe-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 540px;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 360px) {
+  .dish-box {
+    margin: 0 auto;
+  }
+
+  .button {
+    position: relative;
+    left: 60px;
+  }
+}
+
+@media only screen and (max-width : 680px) {
+  .dish-box {
+    margin-bottom: -20px;
+  }
+
+  .container,
+  .all-dishes {
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+

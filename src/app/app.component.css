@@ -1,0 +1,11 @@
+.container {
+  margin: 0 auto;
+  padding: 30px 100px 30px 210px;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width : 680px) {
+  .container {
+    padding: 30px;
+  }
+}
