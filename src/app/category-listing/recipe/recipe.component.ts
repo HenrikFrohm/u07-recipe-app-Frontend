@@ -2,7 +2,6 @@ import { Component, Input, OnInit } from '@angular/core';
 import { RecipesService, Recipes } from '../../recipes.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { AppComponent } from '../../app.component';
-import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-recipe',

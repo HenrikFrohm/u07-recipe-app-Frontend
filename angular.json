@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css", //ändrar en del på designen, behöver fixa//
               "src/styles.css"
             ],
             "scripts": []
