@@ -22,7 +22,7 @@ export class RecipeComponent implements OnInit {
     this.recipesService.fetchRecipes(this.id)
       .subscribe((data: Recipes) => {
         this.data = data.meals[0];
-        this.app.setTitle(`${data.meals[0].strMeal} Recipe | Foodster `);
+        //this.app.setTitle(`${data.meals[0].strMeal} Recipe | u07-angular `);
         localStorage.setItem(this.id, JSON.stringify(this.data));
         this.listIngredients();
         localStorage.setItem('ingredients', JSON.stringify(this.ingredients));

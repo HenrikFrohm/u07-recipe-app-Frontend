@@ -16,6 +16,9 @@ import { RecipeComponent } from './category-listing/recipe/recipe.component';
 import { FeaturedComponent } from './featured/featured.component';
 import { SavedComponent } from './saved/saved.component';
 import { RecipesService } from './recipes.service';
+import { SigninComponent } from './auth/signin/signin.component';
+import { SignupComponent } from './auth/signup/signup.component';
+import { UserProfileComponent } from './auth/user-profile/user-profile.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +28,10 @@ import { RecipesService } from './recipes.service';
     SavedComponent,
     CategoriesComponent,
     CategoryListingComponent,
-    RecipeComponent
+    RecipeComponent,
+    SigninComponent,
+    SignupComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +43,9 @@ import { RecipesService } from './recipes.service';
   providers: [
     RecipesService,
     Title
+  //provide: HTTP_INTERCEPTORS,
+  //useClass: AuthInterceptor,
+  //multi: true
   ],
   bootstrap: [AppComponent]
 })

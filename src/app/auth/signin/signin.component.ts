@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthService } from './../../shared/auth.service';
+import { AuthService } from './../../auth/shared/auth.service';
 import { FormBuilder, FormGroup } from "@angular/forms";
-import { TokenService } from '../../shared/token.service';
-import { AuthStateService } from '../../shared/auth-state.service';
+import { TokenService } from '../../auth/shared/token.service';
+import { AuthStateService } from '../../auth/shared/auth-state.service';
 
 @Component({
   selector: 'app-signin',
   templateUrl: './signin.component.html',
-  styleUrls: ['./signin.component.scss']
+  styleUrls: ['./signin.component.css']
 })
 
 export class SigninComponent implements OnInit {
