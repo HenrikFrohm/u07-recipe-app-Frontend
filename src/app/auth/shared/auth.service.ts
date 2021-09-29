@@ -30,7 +30,9 @@ export class AuthService {
 
   // Access user profile
   profileUser(): Observable<any> {
-    return this.http.get('http://127.0.0.1:80/api/auth/user-profile');
+    const user = this.http.get('http://127.0.0.1:80/api/auth/user-profile');
+    console.log(user);
+    return user;
   }
 
 }

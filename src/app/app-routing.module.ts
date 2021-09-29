@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'category/:category.strCategory', component: CategoryListingComponent },
   { path: 'category/:category.strCategory/:dish.strMeal/:dish.idMeal', component: RecipeComponent },
   { path: 'saved-recipes', component: SavedComponent },
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  //{ path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: SigninComponent },
   { path: 'register', component: SignupComponent },
   { path: 'profile', component: UserProfileComponent }

@@ -23,27 +23,27 @@ li {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  text-align: center;
+  text-align: left;
   color: #fff;
   font-family: 'Varela Round', sans-serif;
 }
 
 
-@media only screen and (max-width : 680px) {
+@media only screen and (max-width : 767px) {
 
   ul,
   li {
     display: inline;
-    padding: 10px;
+    padding: 8px;
     text-align: center;
     margin: 0;
     font-weight: 600;
     color: black;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   nav {
-    height: 40px;
+    height: 45px;
     width: 100vw;
     z-index: 1;
     background: #fff;
@@ -54,7 +54,9 @@ li {
   }
 }
 
-@media only screen and (max-width: 330px) {
+
+
+@media only screen and (max-width: 490px) {
 
   ul,
   li {
@@ -63,7 +65,7 @@ li {
   }
 
   nav {
-    height: auto;
+    height: 89px;
     width: 100vw;
     z-index: 1;
     background: #fff;

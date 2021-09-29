@@ -41,8 +41,7 @@ import { UserProfileComponent } from './auth/user-profile/user-profile.component
     FormsModule
   ],
   providers: [
-    RecipesService,
-    Title
+    RecipesService
   //provide: HTTP_INTERCEPTORS,
   //useClass: AuthInterceptor,
   //multi: true

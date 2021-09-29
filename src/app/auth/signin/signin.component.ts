@@ -31,16 +31,22 @@ export class SigninComponent implements OnInit {
   ngOnInit() { }
 
   onSubmit() {
+    let resData;
       this.authService.signin(this.loginForm.value).subscribe(
         result => {
+          console.log('on submit result')
+          console.log(result);
+          resData = result;
           this.responseHandler(result);
         },
         error => {
+          console.log('error');
+          console.log(error);
           this.errors = error.error;
         },() => {
           this.authState.setAuthState(true);
           this.loginForm.reset()
-          this.router.navigate(['profile']);
+          this.router.navigate(['profile'],{state: resData } );
         }
       );
   }
